@@ -183,3 +183,4 @@ def save_summary_to_txt(results_lr, results_rf, results_xgb, best_model_name, be
         file.write("Best Model:\n")
         file.write(f"Model Name: {best_model_name}\n")
         file.write(f"R² Score: {best_model_r2}\n\n")
+save_summary_to_txt(results_lr, results_rf, results_xgb, best_model_name, best_model_r2)
