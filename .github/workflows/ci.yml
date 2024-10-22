@@ -1,0 +1,29 @@
+# .github/workflows/ci.yml
+
+name: Run Data Processing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Run results processing
+        run: python s25488.py
+
+      - name: Display report
+        run: cat report.txt
