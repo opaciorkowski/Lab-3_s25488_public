@@ -8,7 +8,7 @@ GitHub Actions automatycznie:
 - Buduje obraz Docker aplikacji na podstawie pliku `Dockerfile`.
 - Publikuje zbudowany obraz na Docker Hub.
 
-Aby skorzystać z tej funkcji, dodaj `DOCKERHUB_USERNAME` i `DOCKERHUB_TOKEN` w sekcji `Secrets` repozytorium na GitHub, a następnie wykonaj `commit` i `push` ze słowem "deploy" w wiadomości, np.:
+Aby skorzystać z tej funkcji, dodaj `DOCKERHUB_USERNAME` i `DOCKERHUB_TOKEN` w sekcji `Secrets` repozytorium na GitHub, a następnie wykonaj `commit` i `push` ze słowem "deploy" w wiadomości.
 
 ### **a) Klonowanie Repozytorium**
 1. **Skopiowanie repozytorium z GitHub:**
