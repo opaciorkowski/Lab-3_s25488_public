@@ -39,10 +39,7 @@ jobs:
         run: |
           curl -X POST http://127.0.0.1:5000/predict \
                -H "Content-Type: application/json" \
-               -d "[\"male\", \"other\", \"yes\", \"no\", \"yes\", \"yes\", 6.2, 8.09, 0.2, 0.88915, 12, \"high\", \"other\"]"
-
-      - name: Wait for 10 seconds
-        run: sleep 10
+               -d "[1, \"male\", \"other\", \"yes\", \"no\", \"yes\", \"yes\", 6.2, 8.09, 0.2, 0.88915, 12, \"high\", \"other\"]"
 
       - name: Stop Docker container
         run: docker stop lab4

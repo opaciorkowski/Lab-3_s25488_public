@@ -75,7 +75,7 @@ Możesz użyć `curl` w wierszu poleceń, aby wysłać żądanie do endpointu `/
 #### Przykład z użyciem JSON:
 1. **Wykonanie żądania z danymi w formacie JSON (przykład użycia):**
     ```bash
-    curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "[\"male\", \"other\", \"yes\", \"no\", \"yes\", \"yes\", 6.2, 8.09, 0.2, 0.88915, 12, \"high\", \"other\"]"
+    curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "[1, \"male\", \"other\", \"yes\", \"no\", \"yes\", \"yes\", 6.2, 8.09, 0.2, 0.88915, 12, \"high\", \"other\"]"
     ```
 
 #### Przykład z użyciem pliku CSV:
